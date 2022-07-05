@@ -25,29 +25,47 @@ public class Week4Activities : MonoBehaviour
             Debug.Log("It is not a leap year.");
         }
 
-        farenheit = Random.Range(1, 200);
+        farenheit = Random.Range(1, 130);
         Debug.Log("It is " + farenheit + " degrees farenheit.");
         celsius = (farenheit - 32) * 5/9;
         Debug.Log("This is " + celsius + " degrees in celsius.");
 
-        if(celsius <= 0)
+        if(celsius <= 0) //if celsius is 0 or below
         {
-            Debug.Log("Freezing weather");
+            Debug.Log("Freezing weather.");
         }
-        if (celsius > 0 && < 11)
+        else if(celsius <= 10) //if celsius is less than or equal 10
         {
-            Debug.Log("Very cold weather");
+            Debug.Log("Very cold weather.");
         }
-        if (celsius > 10 && < 15)
+        if(celsius <= 14) //if celsius is less than or equal to 14
         {
             Debug.Log("It's a bit cool.");
         }
-        else if (celsius > 15 && < 21) ;
+        else if(celsius <= 20) //otherwise, if less than or equal to 20
         {
-            Debug.Log("It's cold");
+            Debug.Log("It's cold.");
         }
+        //if(celsius >= 20)
+       
 
 
+
+        //if celsius is 11-20
+        //if 
+        //{
+        //    Debug.Log("It's a bit cool.");
+        //}
+        //else if 
+        //{
+        //    Debug.Log("It's cold");
+        //}
+
+        //celsius greater or equal to 40 very hot
+        if(celsius >= 40)
+        {
+            Debug.Log("Very hot.");
+        }
 
     }
 
