@@ -4,11 +4,12 @@ using UnityEngine;
 
 namespace ThomasBrady
 {
-    public class Week9Activities : MonoBehaviour
+    public class TriggerZone : MonoBehaviour
     {
-        private void OnTriggerEnter(Collider Sphere)
+        private void OnTriggerEnter(Collider other)
         {
             Debug.Log("The sphere has collided with the cube.");
+            other.transform.position = new Vector3(0, 6, 0);
         }
     }
 }
